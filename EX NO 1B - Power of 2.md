@@ -1,58 +1,3 @@
-Skip to content
-Sudhakaran2452
-AOA-Java-M11
-Repository navigation
-Code
-Pull requests
-Actions
-Projects
-Security
-Insights
-You’re making changes in a project you don’t have write access to. Submitting a change will write it to a new branch in your fork Bmohamedathil/AOA-Java-M11, so you can send a pull request.
-AOA-Java-M11
-/
-EX NO 1B - Power of 2.md
-in
-main
-
-Edit
-
-Preview
-Indent mode
-
-Spaces
-Indent size
-
-2
-Line wrap mode
-
-Soft wrap
-Editing EX NO 1B - Power of 2.md file contents
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
 
 # EX 1B Power of 2
 
@@ -78,6 +23,30 @@ import java.util.*;
 public class Solution {
 
     public boolean isPowerOfTwo(int n) {
-Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
-No file chosen
-Attach files by dragging & dropping, selecting or pasting them.
+     
+     return n>0 && Integer.bitCount(n)==1 ;
+     
+     
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Solution sol = new Solution();
+        int n = scanner.nextInt();
+
+        boolean result = sol.isPowerOfTwo(n);
+        System.out.println(result);
+
+        scanner.close();
+    }
+}
+
+```
+
+## Output:
+
+<img width="742" height="333" alt="image" src="https://github.com/user-attachments/assets/8df5b9d7-0079-4b5d-9a89-4bf07dcee9e3" />
+
+
+## Result:
+The program successfully implemented and the expected output is verified.
